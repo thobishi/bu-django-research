@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  django:
+    image: bu-django:initialize
+    ports:
+      - "8089:8088"
+    volumes:
+      - ./django-project:/app
